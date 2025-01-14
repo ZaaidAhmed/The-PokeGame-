@@ -7,8 +7,8 @@ const app=express();
 // trying to connect the database with our
 mongoose.connect(process.env.MONGO_URL)
 
-.then(()=>console.log("DataBase Connected"))
-.catch((err)=>console.log("DataBase not Connected",err))
+.then(()=>console.log("Fortunately the DataBase is  Connected"))
+.catch((err)=>console.log("Unfotunately the DataBase is not Connected",err))
 
 //middleware
  app.use(express.json())
