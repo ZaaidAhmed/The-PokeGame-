@@ -1,6 +1,6 @@
-/* Import the retro font from Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/* Global styles */
+
 :root {
   font-family: 'Press Start 2P', cursive;
   color-scheme: light dark;
@@ -12,21 +12,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reset margins and padding, and set up body layout */
 body {
   margin: 0;
   display: flex;
-  place-items: center; /* Center content vertically and horizontally */
+  place-items: center; 
   min-width: 320px;
   min-height: 100vh;
-  background-color: transparent; /* Remove background if the Background component is being used */
-  color: rgb(253, 219, 219); /* Light color for text */
+  background-color: transparent;
+  color: rgb(253, 219, 219); 
   
 }
 
 
 
-/* Retro Glow Text Styling */
+
 .glow-text {
   font-size: 3em;
   color: #41ecd6;
