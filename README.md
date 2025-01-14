@@ -82,4 +82,9 @@ npm run dev
 The backend server will be running at http://localhost:8000
 The frontend server will be running at http://localhost:5173
 Open the frontend in your browser and you should be able to access the login, register, and game pages.
+
+### Website
 ![Home Page](frontend/public/HomePage.png)
+![Register](frontend/public/Register.png)
+![Login](frontend/public/Login.png)
+![MemoryGame](frontend/public/MemoryGame.png)
