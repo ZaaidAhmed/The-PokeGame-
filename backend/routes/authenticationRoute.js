@@ -2,7 +2,7 @@ const express= require('express');//core framework used to create the server. Si
 
 const router= express.Router();
 const cors=require(`cors`)
-const {test,registerUser,loginUser,getProfile} =require('../controllers/authController')
+const {test,registerUser,loginUser,getProfile} =require('../controllers/authenticationController')
 
 
 //Middleware
