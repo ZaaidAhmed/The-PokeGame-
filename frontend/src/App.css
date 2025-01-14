@@ -1,0 +1,208 @@
+/* Import the retro font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Global styles */
+:root {
+  font-family: 'Press Start 2P', cursive;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset margins and padding, and set up body layout */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center; /* Center content vertically and horizontally */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: transparent; /* Remove background if the Background component is being used */
+  color: rgb(253, 219, 219); /* Light color for text */
+  
+}
+
+
+
+/* Retro Glow Text Styling */
+.glow-text {
+  font-size: 3em;
+  color: #41ecd6;
+  text-shadow: 
+    0 0 5px #011513,
+    0 0 10px #41ecd6,
+    0 0 15px #174ad4,
+    0 0 20px #290c06,
+    0 0 25px #ff5733,
+    0 0 30px #ff5733;
+}
+
+.home-description {
+  font-size: 1.2em;
+  color: #edff7a;
+  text-shadow: 
+    0 0 5px #1c1311,
+    0 0 10px #ff5733,
+    0 0 15px #ff5733;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(245, 29, 29, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+/* Container for the main app */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Form input focus and hover effects */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #3fb9ff;
+  box-shadow: 0 0 5px 2px #2acdff;
+}
+
+/* Label styles */
+label {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  display: block;
+  color: white;
+}
+
+/* Input and button styling */
+input, button {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+  background-color: #41ecd6;
+  color: rgb(63, 13, 245);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5733;
+  border-color: #ff5733;
+  transform: scale(1.1);
+}
+
+/* Ensure the content in the login container is above the background */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: #41ecd6;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Memory game container */
+.memory-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center content */
+  justify-content: center;  /* Align the content to the top */
+  min-height: 100vh;  /* Ensure the container fills the entire screen height */
+
+}
+
+.memory-game-title {
+  font-size: 3em;
+  text-align: center;
+  color: #41ecd6;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+.score-section {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+  grid-template-rows: repeat(3, 1fr);  /* 3 rows */
+  gap: 20px;  /* Space between the cards */
+  max-width: 800px;  /* Limit the grid width */
+  width: 100%; /* Make it responsive */
+  justify-items: center;  /* Horizontally center the items inside each cell */
+}
+
+.pokemon-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.1);
+}
+
+.pokemon-card img {
+  width: 100%;
+  max-width: 100px;  /* Limit image size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.pokemon-name {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+}
+
+/* Even smaller screens (mobile) */
+@media (max-width: 480px) {
+  .pokemon-grid {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+}
