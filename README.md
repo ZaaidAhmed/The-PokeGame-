@@ -45,7 +45,7 @@ Before running the application, you need to have the following installed:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/ZaaidAhmed/The-PokeGame.git
+git clone https://github.com/ZaaidAhmed/The-PokeGame-.git
 cd pokemon-memory-game
 
 ### 2. Backend Setup
