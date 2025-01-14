@@ -1,5 +1,5 @@
 const User =require('../models/user') // imports the user module .This model is responsible for defining the schema and structure for the user data
-const {hashPassword,comparePassword} =require('../helpers/auth')
+const {hashPassword,comparePassword} =require('../helpers/authentication')
 const jwt=require('jsonwebtoken');
 const test=(req,res) =>{
     res.json('Test is working')
