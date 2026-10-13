@@ -1,90 +1,66 @@
-[Pokémon Memory Game](https://pokegame-frontend.onrender.com)
+# Pokémon Memory Game
 
+[Play the live demo](https://pokegame-frontend.onrender.com)
 
-This project is a fun Pokémon Memory Game application built with React, Node.js, and MongoDB. It allows users to register, log in, and play a game where they need to catch Pokémon by clicking on them, without repeating any Pokémon.
-In the game, you start with 12 Pokémon to catch in the first round. When you catch them all, the next round increases to 24 Pokémon, making it harder. If you click on a Pokémon you've already caught, the round restarts. Each round becomes more challenging as you progress.
+A full-stack Pokémon memory game where players authenticate, progress through increasingly difficult rounds, and avoid selecting the same Pokémon twice.
 
-This game is ready to play! Try it out here: [Pokémon Memory Game](https://pokegame-frontend.onrender.com).
+## What it demonstrates
+
+- Building a React frontend backed by a Node.js/Express API.
+- Implementing registration and login with JWT authentication and password hashing.
+- Persisting user data and game-related state with MongoDB/MongoDB Atlas.
+- Managing client-side API requests, navigation, notifications, and responsive game flows.
 
 ## Features
 
-- **User Authentication**: Users can register and log in to access the game.
-- **Pokémon Memory Game**: A fun memory game where users need to catch Pokémon by clicking on them without repeating.
-- **Responsive UI**: The application is designed to be responsive and user-friendly.
-- **Score Tracking**: Users can see their current score, highest score, and progress through different rounds of the game.
+- User registration and login.
+- Progressive memory-game rounds.
+- Score and game-state handling.
+- Responsive React interface.
+- Screenshots in `frontend/public` for the main flows.
 
-## Technologies Used
+## Tech stack
 
-- **Frontend**:
-  - React.js
-  - React Router
-  - Axios (for API requests)
-  - React Hot Toast (for toast notifications)
-  
-- **Backend**:
-  - Node.js
-  - Express.js
-  - JWT Authentication (JSON Web Tokens)
-  - MongoDB (for user data storage)
-  - Bcrypt (for password hashing)
+- Frontend: React, React Router, Axios, React Hot Toast
+- Backend: Node.js, Express.js, JWT, Bcrypt
+- Data: MongoDB and MongoDB Atlas
+- Supporting tools: CORS and Cookie Parser
 
-- **Other Tools**:
-  - MongoDB Atlas (cloud database)
-  - CORS (for handling cross-origin requests)
-  - Cookie Parser (for handling cookies)
+## Run locally
 
-## Prerequisites
+Prerequisites: Node.js 16+, npm, and a MongoDB database or MongoDB Atlas connection.
 
-Before running the application, you need to have the following installed:
-
-- Node.js (v16+)
-- MongoDB (or MongoDB Atlas account for cloud storage)
-- npm (or yarn)
-
-## Setup Instructions
-
-### 1. Clone the Repository
-
+```bash
 git clone https://github.com/ZaaidAhmed/The-PokeGame-.git
-cd pokemon-memory-game
+cd The-PokeGame-
+```
 
-### 2. Backend Setup
+### Backend
 
-Navigate to the backend folder and install the dependencies:
-
-
+```bash
 cd backend
 npm install
-
-
-Create a .env file in the backend folder and add the following environment variables:
-
-
-MONGO_URL=your_mongo_database_url
-JWT_SECRET=your_jwt_secret_key
-PORT=8000
-
-Run the backend server:
 npm start
+```
 
+Create `backend/.env` with values for `MONGO_URL`, `JWT_SECRET`, and `PORT` before starting the server.
 
-### 3.Frontend Setup
-Navigate to the frontend folder and install the dependencies:
+### Frontend
 
+In a second terminal:
 
-
+```bash
 cd frontend
 npm install
-Run the frontend development server:
-
 npm run dev
-### 3.Accessing the application
-The backend server will be running at http://localhost:8000
-The frontend server will be running at http://localhost:5173
-Open the frontend in your browser and you should be able to access the login, register, and game pages.
+```
 
-### Website
-![Home Page](frontend/public/HomePage.png)
-![Register](frontend/public/Register.png)
-![Login](frontend/public/Login.png)
-![MemoryGame](frontend/public/MemoryGame.png)
+The original project uses a backend on port 8000 and a frontend development server on port 5173; confirm the current scripts and API URL before deployment.
+
+## Screenshots
+
+The repository includes screenshots for the home, registration, login, and memory-game views under `frontend/public`.
+
+## Project notes
+
+This project is a portfolio example of full-stack JavaScript development, authentication, persistence, and interactive product logic.
