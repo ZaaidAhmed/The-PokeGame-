@@ -69,3 +69,26 @@ The repository includes screenshots for the home, registration, login, and memor
 ## Project notes
 
 This project is a portfolio example of full-stack JavaScript development, authentication, persistence, and interactive product logic.
+
+## Architecture
+
+    React frontend
+      |  authentication, routing, game UI
+      v
+    Node.js / Express API
+      |  validation, game requests, auth endpoints
+      +--------------------+
+      |                    |
+      v                    v
+    JWT + Bcrypt        MongoDB / Atlas
+      |                    |
+      +---------> user and game data
+
+## How it works
+
+1. A user registers or signs in through the React frontend.
+2. The backend validates the request and uses Bcrypt for password handling.
+3. Successful authentication returns a JWT used for protected requests.
+4. The game loads Pokémon data and tracks the current round and selections.
+5. Selecting a duplicate Pokémon restarts the round; completing a round increases the challenge.
+6. MongoDB stores the application’s user-related data through the backend API.
