@@ -1,3 +1,8 @@
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Live demo](https://img.shields.io/badge/Demo-live-2ea44f?style=flat)](https://pokegame-frontend.onrender.com/)
+
 # Pokémon Memory Game
 
 [Play the live demo](https://pokegame-frontend.onrender.com)
